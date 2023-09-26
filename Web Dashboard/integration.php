@@ -277,7 +277,18 @@
 	<h2>Godotlitics - Integration</h2>
 
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/2rJVWN9iwZg?si=MdsZ5DXwfWGY6Ayp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+	<br><br>
+	How to install Godotlitics?<br>
+	- Copy "Web Dashboard" folder files to your web server (or local Wamp installation)<br>
+	- Import SQL file in your database<br>
+	- Modify api/Helper.php file to define your credentials<br>
+	- Copy "Godot Scripts" folder content inside your Godot project<br>
+	- In Godot, go to "Project/Project settings" in "General" tab, "Application/Configuration" menu and edit game description to set this configuration string with your own settings :<br>
+	CompanyName;1.0.0;http://localhost/godotlitics/api/;ABC123<br>
+	Company_Name;Game_Version;API_URL;API_KEY<br>
+	- Look at Example.cs script to understant how to use Godotlitics functions
+	<br><br/>
+	<a href="https://github.com/anthonyc06/godotlitics" target="_blank">Readme file on GitHub</a>.
   </main>
   </div>
 </div>
