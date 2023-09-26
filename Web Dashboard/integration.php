@@ -276,9 +276,9 @@
 	<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 	<h2>Godotlitics - Integration</h2>
 
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/2rJVWN9iwZg?si=MdsZ5DXwfWGY6Ayp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
-    </main>
+  </main>
   </div>
 </div>
 
