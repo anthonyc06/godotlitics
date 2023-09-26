@@ -34,15 +34,38 @@ public partial class Godotlitics : Node
 	{
 		if (!initialized)
 		{
+			InitConfigFile();
+			
 			Guid guid = Guid.NewGuid();
 			userId = userId == "" ? guid.ToString() : userId;
 			if (verbose) GD.Print("UserId : " + userId);
+			var config = new ConfigFile();
+			config.SetValue("Player", "id", userId);
+			config.Save("user://prefs.cfg");
 			
 			ParseConfiguration();
 		}
 		else
 		{
 			if (verbose) GD.Print("Godotlitics already initialized!");
+		}
+	}
+	
+	public void InitConfigFile()
+	{
+		var config = new ConfigFile();
+		Error err = config.Load("user://prefs.cfg");
+		
+		if (err != Error.Ok)
+		{
+			return;
+		}
+		
+		foreach (String player in config.GetSections())
+		{
+			var playerSavedId = config.GetValue(player, "id").ToString();
+			if (playerSavedId != null && playerSavedId != "")
+				userId = playerSavedId;
 		}
 	}
 	

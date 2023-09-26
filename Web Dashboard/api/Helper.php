@@ -23,7 +23,7 @@
             $offset = ($page-1) * 25;
             
             $where = ($id != null) ? "AND id=".$id : "";
-            $sql = "SELECT * FROM events WHERE id>0 ".$where . "ORDER BY id ASC LIMIT 25 OFFSET " . $offset;
+            $sql = "SELECT * FROM events WHERE id>0 ".$where . "ORDER BY id DESC LIMIT 25 OFFSET " . $offset;
             
             return $this->GetEventsFromDb($sql, $key);
         }
