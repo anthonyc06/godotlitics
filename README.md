@@ -11,7 +11,7 @@ Godotlitics is an open source analytics tool for your Godot games.
 - Free and Open source
 
 ## How to install Godotlitics?
-- Copy files to your web server (or local Wamp installation)
+- Copy "Web Dashboard" folder files to your web server (or local Wamp installation)
 - Import SQL file in your database
 - Modify api/Helper.php file to define your credentials
 - Copy "Godot Scripts" folder content inside your Godot project
