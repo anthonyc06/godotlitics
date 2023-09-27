@@ -24,3 +24,5 @@ Company_Name;Game_Version;API_URL;API_KEY
 ![Image](configuration-string.png "Configuration")
 
 - Look at Example.cs script to understant how to use Godotlitics functions
+
+Video tutorial (french): [https://youtu.be/2rJVWN9iwZg](https://youtu.be/2rJVWN9iwZg)
